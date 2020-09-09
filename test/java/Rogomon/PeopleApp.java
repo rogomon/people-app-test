@@ -15,11 +15,11 @@ public class PeopleApp
         java.util.ArrayList<People> list = new java.util.ArrayList<People>();
 
         //adicionando dados
-        obj1.name = "Adriana Ventura";
+        obj1.name = "nome 1";
         obj1.position = "1";
         obj1.category = "Políticos";
 
-        obj2.name = "Marcel Van Hattem";
+        obj2.name = "nome 2";
         obj2.position = "2";
         obj2.category = "Políticos";
 
