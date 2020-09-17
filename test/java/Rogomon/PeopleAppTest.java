@@ -4,6 +4,7 @@ public class PeopleAppTest
 {
     public static void main(String[] args)
     {
+        //mysql connector j dependency added on pom
         //tittle
         System.out.println();
         System.out.println("Lista de Pessoas de referência");
