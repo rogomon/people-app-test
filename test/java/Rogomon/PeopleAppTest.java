@@ -4,7 +4,6 @@ public class PeopleAppTest
 {
     public static void main(String[] args)
     {
-        //mysql connector j dependency added on pom
         //tittle
         System.out.println();
         System.out.println("Lista de Pessoas de referência");
@@ -21,18 +20,18 @@ public class PeopleAppTest
         //loop to add new items
         while(userInput.equals("s"))
         {
-            People newObj = new People();
+            People newPeopleObj = new People();
 
             System.out.println("Posição:");
-            newObj.position = scan.next();
+            newPeopleObj.position = scan.next();
 
             System.out.println("Nome:");
-            newObj.name = scan.next();
+            newPeopleObj.name = scan.next();
 
             System.out.println("Categoria:");
-            newObj.category = scan.next();
+            newPeopleObj.category = scan.next();
 
-            list.add(newObj);
+            list.add(newPeopleObj);
 
             //loop to read the ArrayList
             for (People item : list)
