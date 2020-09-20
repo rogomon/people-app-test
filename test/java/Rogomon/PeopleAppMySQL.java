@@ -1,19 +1,25 @@
 package Rogomon;
 
+/**
+ * Config test for db and jdbc driver
+ * @version 1.03 2020-09-19
+ * @author Rod Neves
+ */
+
 //Project Object Model dependencies added: mysql connector j
 
 public class PeopleAppMySQL
 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
 
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
         }
 
-        catch (Exception ex1)
+        catch (ClassNotFoundException ex)
         {
-        System.out.println("Exception: Failed to register the Class.forName(\"com.mysql.cj.jdbc.Driver\")");
+        System.out.println("ClassNotFoundException: Failed to register the Class.forName(\"com.mysql.cj.jdbc.Driver\")");
         }
 
         try
